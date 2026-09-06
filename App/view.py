@@ -127,7 +127,10 @@ def main():
             result = logic.get_user_position_on_queue(
                 control, int(user_id), int(book_id))
             # TODO Imprimir la posición del usuario en la cola
-
+            if result >= 0:
+                print(f"El usuario {user_id} está en la posición {result} de la cola para el libro {book_id}.")
+            else:
+                print(f"El usuario {user_id} no está en la cola para el libro {book_id}.")
         elif int(inputs[0]) == 4:
             size = input("Indique tamaño de la muestra: ")
             size = int(size)
