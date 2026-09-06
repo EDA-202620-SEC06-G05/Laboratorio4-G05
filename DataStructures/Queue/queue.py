@@ -18,3 +18,13 @@ def peek(queue):
     Retorna el primer elemento de la cola sin eliminarlo.
     """
     return q.peek(queue)
+def is_empty(queue):
+    """
+    Verifica si la cola está vacía.
+    """
+    return q.is_empty(queue)
+def size(queue):
+    """
+    Retorna el tamaño de la cola.
+    """
+    return q.size(queue)
