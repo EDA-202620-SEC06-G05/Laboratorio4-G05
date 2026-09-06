@@ -119,6 +119,10 @@ def load_books_to_read(catalog):
     Carga la información del archivo to_read y los agrega a la lista de libros por leer
     """
     # TODO Implementar la carga de los libros por leer del archivo to_read
+    books_to_read_file = data_dir + '/to_read.csv'
+    input_file = csv.DictReader(open(books_to_read_file, encoding='utf-8'))
+    for to_read in input_file:
+        add_book_to_read(catalog, to_read)
     return books_to_read_size(catalog)
 
 # Funciones de consulta sobre el catálogo
