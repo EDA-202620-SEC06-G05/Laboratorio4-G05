@@ -133,7 +133,10 @@ def get_books_stack_by_user(catalog, user_id):
     Retorna una pila con los libros que un usuario tiene por leer.
     """
     books_stack = st.new_stack()
-
+    books_to_read = catalog['books_to_read']
+    for book in books_to_read["elements"]["elements"]:
+        if book['user_id'] == str(user_id):
+            st.push(books_stack, book)
     # TODO Completar la función que retorna los libros por leer de un usuario. Se debe usar el TAD Pila para resolver el requerimiento
 
     return books_stack
@@ -144,7 +147,8 @@ def get_user_position_on_queue(catalog, user_id, book_id):
     Retorna la posición de un usuario en la cola para leer un libro.
     """
     queue = q.new_queue()
-
+    
+    
     # TODO Completar la función que retorna la posición de un usuario en la cola para leer un libro. Se debe usar el TAD Cola para resolver el requerimiento.
 
     return position
