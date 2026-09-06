@@ -146,7 +146,15 @@ def get_user_position_on_queue(catalog, user_id, book_id):
     """
     Retorna la posición de un usuario en la cola para leer un libro.
     """
-    queue = q.new_queue()
+    
+    position = 0
+    books_to_read = catalog['books_to_read']
+    for book in books_to_read["elements"]["elements"]:
+        if book['book_id'] == str(book_id):
+            position += 1
+            if book['user_id'] == str(user_id):
+                break
+            
     
     
     # TODO Completar la función que retorna la posición de un usuario en la cola para leer un libro. Se debe usar el TAD Cola para resolver el requerimiento.
