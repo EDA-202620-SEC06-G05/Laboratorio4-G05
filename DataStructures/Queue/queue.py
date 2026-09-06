@@ -1,4 +1,4 @@
-from DataStructures.list import array_list as lt
+from DataStructures.List import array_list as lt
 
 def new_queue():
     # Crea una nueva cola vacía utilizando un array_list
