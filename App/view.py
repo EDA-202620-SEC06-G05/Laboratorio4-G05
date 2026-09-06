@@ -66,7 +66,7 @@ def load_data(control):
 def print_books_to_read(results):
     # TODO Imprimir los libros por leer
     for book in results["elements"]["elements"]:
-        prrint(f"Libro: {book['book_id']}, Usuario: {book['user_id']}")
+        print(f"Libro: {book['book_id']}, Usuario: {book['user_id']}")
 
 
 def print_tests_results(queue_results, stack_results):
