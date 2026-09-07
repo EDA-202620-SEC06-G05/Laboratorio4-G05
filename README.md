@@ -30,7 +30,6 @@ Los estudiantes editan esta sección para agregar sus nombres, correos electrón
 
 Pablo Tomás Rocha González, p.rochag@uniandes.edu.co, 202520981	
 Sergio Andrés Montejo Luna, s.montejol@uniandes.edu.co, 202414786
-Iván Caballero, i.caballerob@uniandes.edu.co, 202214854
 
 [Volver al inicio](#laboratorio-4)
 
