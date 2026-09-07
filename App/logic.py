@@ -370,7 +370,7 @@ def measure_stack_performance(catalog):
     # Medir push
     start_time = get_time()
     # TODO Implementar la medición de tiempo para la operación push
-    for book in catalog["book_sublist"]["elements"]["elements"]:
+    for book in catalog["book_sublist"]["elements"]:
         st.push(stack, book)
     end_time = get_time()
     push_time = delta_time(start_time, end_time)
